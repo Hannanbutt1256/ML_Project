@@ -158,8 +158,6 @@ if st.button("🔍 Predict Loan Approval"):
     if hasattr(model, "predict_proba"):
         probability = model.predict_proba(features)[0][1] * 100
         st.subheader("Approval Probability")
-
-        st.subheader("Approval Probability")
         st.plotly_chart(approval_gauge(probability), use_container_width=True)
 
 
