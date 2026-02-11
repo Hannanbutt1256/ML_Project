@@ -1,3 +1,4 @@
+project: loan-approval-prediction
 command:
   - .\venv\Scripts\python.exe
   - ${program}
