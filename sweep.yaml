@@ -1,6 +1,6 @@
 project: loan-approval-prediction
 command:
-  - .\venv\Scripts\python.exe
+  - python
   - ${program}
   - ${args}
 program: train.py

@@ -127,6 +127,10 @@ def main():
     artifact.add_file(model_name)
     wandb.log_artifact(artifact)
 
+    dataset_artifact = wandb.Artifact("loan_dataset", type="dataset")
+    dataset_artifact.add_file("data/Loan.csv")
+    wandb.log_artifact(dataset_artifact)
+
     wandb.finish()
 
 if __name__ == "__main__":
